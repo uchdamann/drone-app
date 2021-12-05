@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.musala.devops.dtos.DroneDTO;
@@ -20,7 +19,6 @@ import com.musala.devops.dtos.MedicationDTO;
 import com.musala.devops.dtos.NewDroneDTO;
 import com.musala.devops.dtos.ResponseDTO;
 import com.musala.devops.enums.State;
-import com.musala.devops.models.Medication;
 import com.musala.devops.service.DroneService;
 
 @RestController
@@ -31,6 +29,8 @@ public class DispatchController {
 	
 	
 	//	TODO: Validate DTOs
+	//	scheduling
+	//	
 	
 	
 	

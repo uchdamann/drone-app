@@ -16,6 +16,7 @@ import com.musala.devops.dtos.ResponseDTO;
 import com.musala.devops.enums.State;
 import com.musala.devops.exceptions.DroneDetailsException;
 import com.musala.devops.exceptions.LoadWeightRestrictionException;
+import com.musala.devops.exceptions.LowBatteryException;
 import com.musala.devops.helpers.Converters;
 import com.musala.devops.helpers.Util;
 import com.musala.devops.models.Drone;
@@ -63,7 +64,13 @@ public class DroneServiceImpl implements DroneService{
 	public ResponseDTO<DroneDTO> loadDrone(Long droneId, List<MedicationDTO> medicationDTOs) {
 		String message;
 		Drone drone = droneRepo.findById(droneId).orElseThrow(()-> new DroneDetailsException("No such drone found"));
+		
+		if (drone.getBatteryCapacity() < props.getMinBatteryLevel()) {
+			throw new LowBatteryException();
+		}
+		
 		Double availableSpace = props.getMaxLoadWeight() - drone.getCurrentLoadWeight();
+		
 		if (medicationDTOs.isEmpty()) {
 			throw new LoadWeightRestrictionException("No Medications found");
 		}
@@ -79,7 +86,7 @@ public class DroneServiceImpl implements DroneService{
 		}
 		
 		return ResponseDTO.newInstance(SUCCESS.getCode(), message,
-				converters.conv_Drone_DroneDTO(drone));
+				converters.conv_Drone_DroneDTO(drone));	
 	}
 
 	@Override

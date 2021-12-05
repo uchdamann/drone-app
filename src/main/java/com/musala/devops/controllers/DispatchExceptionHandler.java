@@ -19,6 +19,8 @@ import com.musala.devops.dtos.ResponseDTO;
 import com.musala.devops.exceptions.DroneDetailsException;
 import com.musala.devops.exceptions.InvalidSerialNumberException;
 import com.musala.devops.exceptions.LoadWeightRestrictionException;
+import com.musala.devops.exceptions.LowBatteryException;
+
 import static com.musala.devops.enums.ResponseMessages.*;
 
 @RestControllerAdvice
@@ -37,6 +39,11 @@ public class DispatchExceptionHandler {
 	@ExceptionHandler(LoadWeightRestrictionException.class)
 	public ResponseDTO<String> handleLoadWeightRestrictionException(LoadWeightRestrictionException ex) {
 		return ResponseDTO.newInstance(ERROR.getCode(), ERROR.getMessage(), ex.getMessage());
+	}
+	
+	@ExceptionHandler(LowBatteryException.class)
+	public ResponseDTO<String> handleLowBatteryException(LowBatteryException ex) {
+		return ResponseDTO.newInstance(LOW_BATTERY.getCode(), LOW_BATTERY.getMessage(), ex.getMessage());
 	}
 
 	@ExceptionHandler(MethodArgumentNotValidException.class)
