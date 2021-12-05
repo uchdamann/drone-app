@@ -10,7 +10,6 @@ import com.musala.devops.config.ConfigProperties;
 import com.musala.devops.dtos.DroneDTO;
 import com.musala.devops.dtos.MedicationDTO;
 import com.musala.devops.dtos.NewDroneDTO;
-import static com.musala.devops.enums.State.*;
 import com.musala.devops.models.Drone;
 import com.musala.devops.models.Medication;
 
@@ -20,12 +19,12 @@ public class Converters {
 	private ConfigProperties props;
 	
 	public Drone conv_NewDroneDTO_Drone(NewDroneDTO newDroneDTO) {
-		final double INITIALWEIGHT = 0.0;
-		Drone drone = Drone.builder().model(newDroneDTO.getModel()).serialNumber(newDroneDTO.getSerialNumber())
-				.batteryCapacity(newDroneDTO.getBatteryCapacity()).state(IDLE)
-				.weightLimit(props.getMaxLoadWeight())
-				.currentLoadWeight(INITIALWEIGHT)
-				.build();
+		Drone drone = new Drone();
+		drone.setModel(newDroneDTO.getModel());
+		drone.setSerialNumber(newDroneDTO.getSerialNumber());
+		drone.setBatteryCapacity(newDroneDTO.getBatteryCapacity());
+		drone.setWeightLimit(props.getMaxLoadWeight());
+
 		return drone;
 	}
 	
@@ -66,9 +65,12 @@ public class Converters {
 	}
 	
 	public Medication conv_MedicationDTO_Medication(MedicationDTO medicationDTO) {
-		Medication medication = Medication.builder().name(medicationDTO.getName())
-				.weight(medicationDTO.getWeight()).code(medicationDTO.getCode())
-				.image(medicationDTO.getImage()).build();
+		Medication medication = new Medication();
+		medication.setName(medicationDTO.getName());
+		medication.setWeight(medicationDTO.getWeight());
+		medication.setCode(medicationDTO.getCode());
+		medication.setImage(medicationDTO.getImage());
+		
 		return medication;
 	}
 	

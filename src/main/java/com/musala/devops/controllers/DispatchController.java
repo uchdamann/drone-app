@@ -49,7 +49,7 @@ public class DispatchController {
 	
 	@PutMapping("/load-drone/{droneId}")
 	public ResponseDTO<DroneDTO> loadDrone(@PathVariable Long droneId, @RequestBody List<MedicationDTO> medicationDTOs) {
-		return null;
+		return droneService.loadDrone(droneId, medicationDTOs);
 	}
 	
 	@GetMapping("/getload")

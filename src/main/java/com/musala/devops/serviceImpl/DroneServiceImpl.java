@@ -1,5 +1,6 @@
 package com.musala.devops.serviceImpl;
 
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import com.musala.devops.helpers.Converters;
 import com.musala.devops.models.Drone;
 import com.musala.devops.models.Medication;
 import com.musala.devops.repository.DroneRepo;
+import com.musala.devops.repository.MedicationRepo;
 import com.musala.devops.service.DroneService;
 
 import static com.musala.devops.enums.ResponseMessages.*;
@@ -25,6 +27,8 @@ public class DroneServiceImpl implements DroneService{
 	
 	@Autowired
 	public DroneRepo droneRepo;
+	@Autowired
+	public MedicationRepo medicationRepo;
 	@Autowired
 	public Converters converters;
 
@@ -58,6 +62,7 @@ public class DroneServiceImpl implements DroneService{
 
 	@Override
 	public ResponseDTO<DroneDTO> loadDrone(Long droneId, List<MedicationDTO> medicationDTOs) {
+		String message;
 		Drone drone = droneRepo.findById(droneId).orElseThrow(()-> new DroneDetailsException("No such drone found"));
 		Double availableSpace = 500.0 - drone.getCurrentLoadWeight();
 		if (medicationDTOs.isEmpty()) {
@@ -66,27 +71,40 @@ public class DroneServiceImpl implements DroneService{
 
 		Double totalLoad = medicationDTOs.stream().mapToDouble(each-> each.getWeight())
 				.reduce(0, (total, eachWeight) -> total + eachWeight);
+		if (totalLoad <= availableSpace) {
+			drone.setCurrentLoadWeight(drone.getCurrentLoadWeight() + totalLoad);
+			droneRepo.save(drone);
+			
+			for (MedicationDTO medDTO: medicationDTOs) {
+				Medication med = converters.conv_MedicationDTO_Medication(medDTO);
+				med.setHasBeenLoaded(true);
+				med.setDrone(drone);
+				medicationRepo.save(med);
+			}
+			
+			message = "All medications were loaded on drone";
+		}
+		else {
+			int counter = 0;
+			medicationDTOs.sort((med1, med2) -> med2.getWeight().compareTo(med1.getWeight()));
+			for (MedicationDTO medDTO : medicationDTOs) {
+				if (medDTO.getWeight() <= availableSpace) {
+					Medication med = converters.conv_MedicationDTO_Medication(medDTO);
+					med.setHasBeenLoaded(true);
+					med.setDrone(drone);
+					medicationRepo.save(med);
+					counter++;
+					
+					availableSpace -= medDTO.getWeight();
+					if (availableSpace == 0) {
+						break;
+					}
+				}
+			}
+		}
 		
-		
-		
-		
-		List<Medication> medications = converters.conv_MedicationDTOs_Medications(medicationDTOs);
-		
-		
-		
-		
-		
-		
-		
-		
-//		medications.stream().forEach(each-> {
-//			Double medWeight = each.getWeight();
-//			
-//		});
-		
-		
-		
-		return null;
+		return ResponseDTO.newInstance(SUCCESS.getCode(), SUCCESS.getMessage(),
+				converters.conv_Drone_DroneDTO(drone));
 	}
 	
 	@Override
