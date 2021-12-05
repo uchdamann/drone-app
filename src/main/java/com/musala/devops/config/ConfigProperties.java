@@ -12,5 +12,9 @@ public class ConfigProperties {
 	private Double maxLoadWeight;
 	private Double maxBatteryLevel;
 	private Double minBatteryLevel;
-	private String encryptKey;	
+	private String encryptKey;
+	private String url;
+	private String driver;
+	private String username;
+	private String password;
 }

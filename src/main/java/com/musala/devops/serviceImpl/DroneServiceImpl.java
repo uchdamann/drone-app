@@ -27,11 +27,11 @@ public class DroneServiceImpl implements DroneService{
 	public Converters converters;
 
 	@Override
-	public ResponseDTO<DroneDTO> registerDrone(NewDroneDTO newDroneDTO) {
-		Drone drone = converters.conv_NewDroneDTO_Drone(newDroneDTO);
-		drone = droneRepo.save(drone);
+	public ResponseDTO<List<DroneDTO>> registerDrone(List<NewDroneDTO> newDroneDTOs) {
+		List<Drone> drones = converters.conv_NewDroneDTOs_Drones(newDroneDTOs);
+		drones = droneRepo.saveAll(drones);
 		return ResponseDTO.newInstance(DRONE_REGISTERED.getCode(), DRONE_REGISTERED.getMessage(),
-				converters.conv_Drone_DroneDTO(drone));
+				converters.conv_Drones_DroneDTOs(drones));
 	}
 
 	@Override
@@ -39,17 +39,23 @@ public class DroneServiceImpl implements DroneService{
 		Drone drone = droneRepo.findById(droneId).get();
 		List<Medication> medications = drone.getMedications();
 		return ResponseDTO.newInstance(SUCCESS.getCode(), SUCCESS.getMessage(),
-				converters.conv_Drone_DroneDTO(drone));
+				converters.conv_Medications_MedicationDTOs(medications));
 	}
 
 	@Override
-	public List<Drone> getAvailableDrones(State droneState) {
-		// TODO Auto-generated method stub
+	public ResponseDTO<List<DroneDTO>> getAvailableDrones (State droneState) {
+		
 		return null;
 	}
 
 	@Override
-	public Double getBatteryLevel(Long droneId) {
+	public ResponseDTO<DroneDTO> loadDrone(Long droneId, List<MedicationDTO> medicationDTOs) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public ResponseDTO<Double> getBatteryLevel(Long droneId) {
 		// TODO Auto-generated method stub
 		return null;
 	}

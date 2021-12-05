@@ -112,6 +112,7 @@ public class EncryptorUtil {
 	
 	public static void main(String[] args) {
 		EncryptorUtil encryptorUtil = new EncryptorUtil("F12r#ckt");
-		log.info("--->>"+encryptorUtil.encryptStringEncoded("root"));
+		log.info("--->>"+encryptorUtil.encryptStringEncoded("pword"));
+		log.info("--->>"+encryptorUtil.decryptStringEncoded("SOQO0CyDU/E="));
 	}
 }

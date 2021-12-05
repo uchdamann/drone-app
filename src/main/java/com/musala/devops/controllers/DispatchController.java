@@ -27,9 +27,9 @@ public class DispatchController {
 	@Autowired
 	public DroneService droneService;
 	
-	@PostMapping("/savedrone")
-	public ResponseDTO<DroneDTO> saveDrone(@RequestBody NewDroneDTO newDroneDTO) {
-		return droneService.registerDrone(newDroneDTO);
+	@PostMapping("/save-drone")
+	public ResponseDTO<List<DroneDTO>> saveDrone(@RequestBody List<NewDroneDTO> newDroneDTOs) {
+		return droneService.registerDrone(newDroneDTOs);
 	}
 	
 	@PutMapping("/loaddrone")
