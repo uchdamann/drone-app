@@ -41,14 +41,6 @@ public class DroneServiceImpl implements DroneService{
 	}
 
 	@Override
-	public ResponseDTO<List<MedicationDTO>> getMedications(Long droneId) {
-		Drone drone = droneRepo.findById(droneId).get();
-		List<Medication> medications = drone.getMedications();
-		return ResponseDTO.newInstance(SUCCESS.getCode(), SUCCESS.getMessage(),
-				converters.conv_Medications_MedicationDTOs(medications));
-	}
-
-	@Override
 	public ResponseDTO<List<DroneDTO>> getAvailableDrones (State droneState) {
 		List<Drone> drones = droneRepo.findByState(droneState).get();
 		if (drones.isEmpty()) {
@@ -101,10 +93,23 @@ public class DroneServiceImpl implements DroneService{
 					}
 				}
 			}
+			
+			message = "Only "+counter+" medications were added due to weight constraint";
 		}
 		
-		return ResponseDTO.newInstance(SUCCESS.getCode(), SUCCESS.getMessage(),
+		return ResponseDTO.newInstance(SUCCESS.getCode(), message,
 				converters.conv_Drone_DroneDTO(drone));
+	}
+
+	@Override
+	public ResponseDTO<List<MedicationDTO>> getMedications(Long droneId) {
+		Drone drone = droneRepo.findById(droneId).orElseThrow(()-> new DroneDetailsException("No such drone found"));
+		List<Medication> medications = drone.getMedications();
+		if (medications.isEmpty())
+			throw new LoadWeightRestrictionException("No Medications found");
+		
+		return ResponseDTO.newInstance(SUCCESS.getCode(), SUCCESS.getMessage(),
+				converters.conv_Medications_MedicationDTOs(medications));
 	}
 	
 	@Override

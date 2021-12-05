@@ -2,6 +2,8 @@ package com.musala.devops.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,7 +40,7 @@ public class DispatchController {
 	public DroneService droneService;
 	
 	@PostMapping("/save-drone")
-	public ResponseDTO<List<DroneDTO>> saveDrone(@RequestBody List<NewDroneDTO> newDroneDTOs) {
+	public ResponseDTO<List<DroneDTO>> saveDrone(@RequestBody @Valid List<NewDroneDTO> newDroneDTOs) {
 		return droneService.registerDrone(newDroneDTOs);
 	}
 
@@ -48,17 +50,17 @@ public class DispatchController {
 	}
 	
 	@PutMapping("/load-drone/{droneId}")
-	public ResponseDTO<DroneDTO> loadDrone(@PathVariable Long droneId, @RequestBody List<MedicationDTO> medicationDTOs) {
+	public ResponseDTO<DroneDTO> loadDrone(@PathVariable Long droneId, @RequestBody @Valid List<MedicationDTO> medicationDTOs) {
 		return droneService.loadDrone(droneId, medicationDTOs);
 	}
 	
-	@GetMapping("/getload")
-	public ResponseDTO<List<Medication>> getDroneLoad (@PathVariable Long droneId) {
-		return null;
+	@GetMapping("/get-load/{droneId}")
+	public ResponseDTO<List<MedicationDTO>> getDroneLoad (@PathVariable Long droneId) {
+		return droneService.getMedications(droneId);
 	}
 	
-	@GetMapping("/getbattery")
+	@GetMapping("/get-battery/{droneId}")
 	public ResponseDTO<Double> getDroneBattery(@PathVariable Long droneId) {
-		return null;
+		return droneService.getBatteryLevel(droneId);
 	}
 }
