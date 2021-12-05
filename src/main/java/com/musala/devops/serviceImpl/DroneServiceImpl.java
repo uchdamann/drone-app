@@ -10,6 +10,7 @@ import com.musala.devops.dtos.MedicationDTO;
 import com.musala.devops.dtos.NewDroneDTO;
 import com.musala.devops.dtos.ResponseDTO;
 import com.musala.devops.enums.State;
+import com.musala.devops.exceptions.DroneDetailsException;
 import com.musala.devops.helpers.Converters;
 import com.musala.devops.models.Drone;
 import com.musala.devops.models.Medication;
@@ -44,8 +45,14 @@ public class DroneServiceImpl implements DroneService{
 
 	@Override
 	public ResponseDTO<List<DroneDTO>> getAvailableDrones (State droneState) {
-		
-		return null;
+		List<Drone> drones = droneRepo.findByState(droneState).get();
+		if (drones.isEmpty()) {
+			throw new DroneDetailsException("No drone in "+droneState+" state currently!");
+		}
+		else {
+			return ResponseDTO.newInstance(SUCCESS.getCode(), SUCCESS.getMessage(),
+					converters.conv_Drones_DroneDTOs(drones));
+		}
 	}
 
 	@Override

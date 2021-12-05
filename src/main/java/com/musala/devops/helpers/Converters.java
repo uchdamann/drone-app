@@ -3,19 +3,26 @@ package com.musala.devops.helpers;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.musala.devops.config.ConfigProperties;
 import com.musala.devops.dtos.DroneDTO;
 import com.musala.devops.dtos.MedicationDTO;
 import com.musala.devops.dtos.NewDroneDTO;
+import static com.musala.devops.enums.State.*;
 import com.musala.devops.models.Drone;
 import com.musala.devops.models.Medication;
 
 @Component
 public class Converters {
+	@Autowired
+	private ConfigProperties props;
+	
 	public Drone conv_NewDroneDTO_Drone(NewDroneDTO newDroneDTO) {
 		Drone drone = Drone.builder().model(newDroneDTO.getModel()).serialNumber(newDroneDTO.getSerialNumber())
-				.batteryCapacity(newDroneDTO.getBatteryCapacity()).build();
+				.batteryCapacity(newDroneDTO.getBatteryCapacity()).state(IDLE)
+				.weightLimit(props.getMaxLoadWeight()).build();
 		return drone;
 	}
 	
@@ -24,19 +31,18 @@ public class Converters {
 	}
 	
 	public DroneDTO conv_Drone_DroneDTO(Drone drone) {
-		DroneDTO droneDTO = DroneDTO.builder().id(drone.getId()).model(drone.getModel())
-				.serialNumber(drone.getSerialNumber()).batteryCapacity(drone.getBatteryCapacity())
-				.state(drone.getState()).weightLimit(drone.getWeightLimit())
-				.medicationDTOs(conv_Medications_MedicationDTOs(drone.getMedications())).build();
-		
-		
-//		droneDTO.setId();
-//		droneDTO.builder().(drone.getModel());
-//		droneDTO.setSerialNumber(drone.getSerialNumber());
-//		droneDTO.setBatteryCapacity(drone.getBatteryCapacity());
-//		droneDTO.setState(drone.getState());
-//		droneDTO.setWeightLimit(drone.getWeightLimit());
-//		droneDTO.setMedications(drone.getMedications());
+		DroneDTO droneDTO = null;
+		if (drone.getMedications()==null || drone.getMedications().isEmpty()) {
+			droneDTO = DroneDTO.builder().id(drone.getId()).model(drone.getModel())
+					.serialNumber(drone.getSerialNumber()).batteryCapacity(drone.getBatteryCapacity())
+					.state(drone.getState()).weightLimit(drone.getWeightLimit()).build();
+		}
+		else {
+			droneDTO = DroneDTO.builder().id(drone.getId()).model(drone.getModel())
+					.serialNumber(drone.getSerialNumber()).batteryCapacity(drone.getBatteryCapacity())
+					.state(drone.getState()).weightLimit(drone.getWeightLimit())
+					.medicationDTOs(conv_Medications_MedicationDTOs(drone.getMedications())).build();
+		}
 		
 		return droneDTO;
 	}

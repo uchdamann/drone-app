@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.musala.devops.dtos.DroneDTO;
 import com.musala.devops.dtos.NewDroneDTO;
 import com.musala.devops.dtos.ResponseDTO;
+import com.musala.devops.enums.State;
 import com.musala.devops.models.Medication;
 import com.musala.devops.service.DroneService;
 
@@ -31,6 +32,11 @@ public class DispatchController {
 	public ResponseDTO<List<DroneDTO>> saveDrone(@RequestBody List<NewDroneDTO> newDroneDTOs) {
 		return droneService.registerDrone(newDroneDTOs);
 	}
+
+	@GetMapping("/get-available-drones/{droneState}")
+	public ResponseDTO<List<DroneDTO>> getAvailableDrones(@PathVariable State droneState) {
+		return droneService.getAvailableDrones(droneState);
+	}
 	
 	@PutMapping("/loaddrone")
 	public ResponseDTO<DroneDTO> loadDrone(@RequestBody List<Medication> medications) {
@@ -39,11 +45,6 @@ public class DispatchController {
 	
 	@GetMapping("/getload")
 	public ResponseDTO<List<Medication>> getDroneLoad (@PathVariable Long droneId) {
-		return null;
-	}
-	
-	@GetMapping("/getavailabledrones")
-	public ResponseDTO<DroneDTO> getAvailableDrones(@RequestParam String droneState) {
 		return null;
 	}
 	
