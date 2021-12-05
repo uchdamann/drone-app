@@ -11,8 +11,8 @@ import com.musala.devops.enums.State;
 public interface DroneService {
 	public ResponseDTO<List<DroneDTO>> registerDrone(List<NewDroneDTO> newDroneDTOs);
 	public ResponseDTO<List<DroneDTO>> getAvailableDrones(State droneState);
-	
 	public ResponseDTO<DroneDTO> loadDrone(Long droneId, List<MedicationDTO> medicationDTOs);
+	
 	public ResponseDTO<List<MedicationDTO>> getMedications(Long droneId);
 	public ResponseDTO<Double> getBatteryLevel(Long droneId);
 }

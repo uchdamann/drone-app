@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Version;
 
 import lombok.Data;
 
@@ -19,5 +20,7 @@ public abstract class CommonFields {
 	private Long id;
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdOn=new Date();
+	@Version
+	private Long version;
 
 }

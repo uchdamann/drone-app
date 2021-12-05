@@ -20,9 +20,12 @@ public class Converters {
 	private ConfigProperties props;
 	
 	public Drone conv_NewDroneDTO_Drone(NewDroneDTO newDroneDTO) {
+		final double INITIALWEIGHT = 0.0;
 		Drone drone = Drone.builder().model(newDroneDTO.getModel()).serialNumber(newDroneDTO.getSerialNumber())
 				.batteryCapacity(newDroneDTO.getBatteryCapacity()).state(IDLE)
-				.weightLimit(props.getMaxLoadWeight()).build();
+				.weightLimit(props.getMaxLoadWeight())
+				.currentLoadWeight(INITIALWEIGHT)
+				.build();
 		return drone;
 	}
 	

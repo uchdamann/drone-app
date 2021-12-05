@@ -11,6 +11,7 @@ import com.musala.devops.dtos.NewDroneDTO;
 import com.musala.devops.dtos.ResponseDTO;
 import com.musala.devops.enums.State;
 import com.musala.devops.exceptions.DroneDetailsException;
+import com.musala.devops.exceptions.LoadWeightRestrictionException;
 import com.musala.devops.helpers.Converters;
 import com.musala.devops.models.Drone;
 import com.musala.devops.models.Medication;
@@ -57,7 +58,34 @@ public class DroneServiceImpl implements DroneService{
 
 	@Override
 	public ResponseDTO<DroneDTO> loadDrone(Long droneId, List<MedicationDTO> medicationDTOs) {
-		// TODO Auto-generated method stub
+		Drone drone = droneRepo.findById(droneId).orElseThrow(()-> new DroneDetailsException("No such drone found"));
+		Double availableSpace = 500.0 - drone.getCurrentLoadWeight();
+		if (medicationDTOs.isEmpty()) {
+			throw new LoadWeightRestrictionException("No Medications found");
+		}
+
+		Double totalLoad = medicationDTOs.stream().mapToDouble(each-> each.getWeight())
+				.reduce(0, (total, eachWeight) -> total + eachWeight);
+		
+		
+		
+		
+		List<Medication> medications = converters.conv_MedicationDTOs_Medications(medicationDTOs);
+		
+		
+		
+		
+		
+		
+		
+		
+//		medications.stream().forEach(each-> {
+//			Double medWeight = each.getWeight();
+//			
+//		});
+		
+		
+		
 		return null;
 	}
 	

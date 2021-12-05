@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.musala.devops.dtos.DroneDTO;
+import com.musala.devops.dtos.MedicationDTO;
 import com.musala.devops.dtos.NewDroneDTO;
 import com.musala.devops.dtos.ResponseDTO;
 import com.musala.devops.enums.State;
@@ -24,6 +25,14 @@ import com.musala.devops.service.DroneService;
 @RequestMapping("/app/v1")
 @CrossOrigin(maxAge = 3600, origins = "*")
 public class DispatchController {
+
+	
+	
+	//	TODO: Validate DTOs
+	
+	
+	
+	
 	
 	@Autowired
 	public DroneService droneService;
@@ -38,8 +47,8 @@ public class DispatchController {
 		return droneService.getAvailableDrones(droneState);
 	}
 	
-	@PutMapping("/loaddrone")
-	public ResponseDTO<DroneDTO> loadDrone(@RequestBody List<Medication> medications) {
+	@PutMapping("/load-drone/{droneId}")
+	public ResponseDTO<DroneDTO> loadDrone(@PathVariable Long droneId, @RequestBody List<MedicationDTO> medicationDTOs) {
 		return null;
 	}
 	

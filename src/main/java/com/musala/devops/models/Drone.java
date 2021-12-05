@@ -26,6 +26,7 @@ public class Drone extends CommonFields {
 	private Double batteryCapacity;
 	@Enumerated(EnumType.STRING)
 	private State state;
+	private Double currentLoadWeight;
 	@OneToMany(mappedBy = "drone", cascade = CascadeType.ALL)
 	private List<Medication> medications;
 	
@@ -42,6 +43,7 @@ public class Drone extends CommonFields {
 		private Double batteryCapacity;
 		@Enumerated(EnumType.STRING)
 		private State state;
+		private Double currentLoadWeight;
 		private List<Medication> medications;
 		
 		
@@ -74,6 +76,11 @@ public class Drone extends CommonFields {
 			this.medications = medications;
 			return this;
 		}
+
+		public DroneBuilder currentLoadWeight(Double currentLoadWeight) {
+			this.currentLoadWeight = currentLoadWeight;
+			return this;
+		}
 		
 		public Drone build() {
 			Drone drone = new Drone();
@@ -83,6 +90,7 @@ public class Drone extends CommonFields {
 			drone.batteryCapacity = this.batteryCapacity;
 			drone.state = this.state;
 			drone.medications = this.medications;
+			drone.currentLoadWeight = this.currentLoadWeight;
 			
 			return drone;
 		}
