@@ -5,6 +5,7 @@ import java.util.Map;
 
 import javax.validation.UnexpectedTypeException;
 
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.FieldError;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
@@ -24,6 +25,7 @@ import com.musala.devops.exceptions.LowBatteryException;
 import static com.musala.devops.enums.ResponseMessages.*;
 
 @RestControllerAdvice
+@ResponseStatus(HttpStatus.BAD_REQUEST)
 public class DispatchExceptionHandler {
 
 	@ExceptionHandler(DroneDetailsException.class)
@@ -85,6 +87,11 @@ public class DispatchExceptionHandler {
 
 	@ExceptionHandler(UnexpectedTypeException.class)
 	public ResponseDTO<String> handleUnexpectedTypeException(UnexpectedTypeException ex) {
+		return ResponseDTO.newInstance(ERROR.getCode(), ERROR.getMessage(), ex.getMessage());
+	}
+	
+	@ExceptionHandler(DataIntegrityViolationException.class)
+	public ResponseDTO<String> handleDataIntegrityViolationException(DataIntegrityViolationException ex) {
 		return ResponseDTO.newInstance(ERROR.getCode(), ERROR.getMessage(), ex.getMessage());
 	}
 }

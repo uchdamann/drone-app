@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.musala.devops.dtos.DroneDTO;
@@ -23,6 +25,7 @@ import com.musala.devops.service.DroneService;
 
 @RestController
 @RequestMapping("/app/v1")
+@ResponseStatus(value = HttpStatus.OK)
 @CrossOrigin(maxAge = 3600, origins = "*")
 public class DispatchController {
 
@@ -41,7 +44,7 @@ public class DispatchController {
 	public DroneService droneService;
 	
 	@PostMapping("/save-drone")
-	public ResponseDTO<List<DroneDTO>> saveDrone(@RequestBody @Valid List<NewDroneDTO> newDroneDTOs) {
+	public ResponseDTO<List<DroneDTO>> saveDrone(@Valid @RequestBody List<NewDroneDTO> newDroneDTOs) {
 		return droneService.registerDrone(newDroneDTOs);
 	}
 
