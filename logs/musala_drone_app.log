@@ -478,3 +478,1234 @@ Mon 06-12-2021 08:52:20.998 INFO  - [extShutdownHook] LocalContainerEntityManage
 Mon 06-12-2021 08:52:21.000 INFO  - [extShutdownHook] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 Mon 06-12-2021 08:52:21.077 INFO  - [extShutdownHook] HikariDataSource          : HikariPool-1 - Shutdown initiated...
 Mon 06-12-2021 08:52:21.094 INFO  - [extShutdownHook] HikariDataSource          : HikariPool-1 - Shutdown completed.
+Mon 06-12-2021 08:52:51.965 INFO  - [kground-preinit] Version                   : HV000001: Hibernate Validator 6.1.6.Final
+Mon 06-12-2021 08:52:52.064 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 7404 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 08:52:52.080 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 08:52:52.287 INFO  - [  restartedMain] DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Mon 06-12-2021 08:52:52.289 INFO  - [  restartedMain] DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+Mon 06-12-2021 08:52:54.880 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 08:52:55.081 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 08:52:55.734 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$d438ce9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 08:52:55.739 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$686cd382] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 08:52:56.985 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 08:52:57.298 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 08:52:57.299 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 08:52:57.299 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 08:52:57.552 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 08:52:57.553 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5262 ms
+Mon 06-12-2021 08:52:57.872 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 08:52:57.878 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 08:52:57.960 INFO  - [  restartedMain] HikariDataSource          : HikariPool-1 - Starting...
+Mon 06-12-2021 08:52:58.213 INFO  - [  restartedMain] HikariDataSource          : HikariPool-1 - Start completed.
+Mon 06-12-2021 08:52:58.231 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 08:52:58.587 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 08:52:58.727 INFO  - [  restartedMain] Version                   : HHH000412: Hibernate ORM core version 5.4.25.Final
+Mon 06-12-2021 08:52:59.056 INFO  - [  restartedMain] Version                   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Mon 06-12-2021 08:52:59.285 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 08:53:00.656 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 08:53:00.672 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 08:53:00.740 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 08:53:01.793 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 08:53:01.939 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 08:53:03.925 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 08:53:04.032 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 08:53:04.079 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 08:53:04.112 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 12.998 seconds (JVM running for 15.609)
+Mon 06-12-2021 08:53:29.178 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 08:53:29.178 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 08:53:29.180 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 08:53:29.197 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 08:53:29.197 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 08:53:29.197 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 08:53:29.715 INFO  - [nio-9119-exec-1] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 08:53:36.374 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 08:53:36.374 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 08:53:36.374 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 08:53:36.386 WARN  - [nio-9119-exec-2] SqlExceptionHelper        : SQL Error: 23505, SQLState: 23505
+Mon 06-12-2021 08:53:36.387 ERROR - [nio-9119-exec-2] SqlExceptionHelper        : Unique index or primary key violation: "PUBLIC.UK_DEC40DJ9SUJACYY3N8T5L80RY_INDEX_3 ON PUBLIC.DRONE(SERIAL_NUMBER) VALUES 1"; SQL statement:
+insert into drone (id, created_on, version, battery_capacity, current_load_weight, model, serial_number, state, weight_limit) values (null, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]
+Mon 06-12-2021 08:53:36.439 ERROR - [nio-9119-exec-2] [dispatcherServlet]       : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_DEC40DJ9SUJACYY3N8T5L80RY_INDEX_3 ON PUBLIC.DRONE(SERIAL_NUMBER) VALUES 1"; SQL statement:
+insert into drone (id, created_on, version, battery_capacity, current_load_weight, model, serial_number, state, weight_limit) values (null, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UK_DEC40DJ9SUJACYY3N8T5L80RY_INDEX_3 ON PUBLIC.DRONE(SERIAL_NUMBER) VALUES 1"; SQL statement:
+insert into drone (id, created_on, version, battery_capacity, current_load_weight, model, serial_number, state, weight_limit) values (null, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:103)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:221)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:196)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:531)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:195)
+	at org.h2.command.dml.Insert.update(Insert.java:151)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:272)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:191)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3199)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3805)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:720)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:706)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy122.persist(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy122.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:557)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAll(SimpleJpaRepository.java:591)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:524)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:531)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:156)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy126.saveAll(Unknown Source)
+	at com.musala.devops.serviceImpl.DroneServiceImpl.registerDrone(DroneServiceImpl.java:48)
+	at com.musala.devops.serviceImpl.DroneServiceImpl$$FastClassBySpringCGLIB$$e7b0a091.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.musala.devops.serviceImpl.DroneServiceImpl$$EnhancerBySpringCGLIB$$698fcc10.registerDrone(<generated>)
+	at com.musala.devops.controllers.DispatchController.saveDrone(DispatchController.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.musala.devops.filters.FilterConfig.doFilter(FilterConfig.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Mon 06-12-2021 08:55:05.030 INFO  - [       Thread-6] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 08:55:05.032 INFO  - [       Thread-6] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 08:55:05.036 INFO  - [       Thread-6] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 08:55:05.037 INFO  - [       Thread-6] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 08:55:05.060 INFO  - [       Thread-6] HikariDataSource          : HikariPool-1 - Shutdown initiated...
+Mon 06-12-2021 08:55:05.067 INFO  - [       Thread-6] HikariDataSource          : HikariPool-1 - Shutdown completed.
+Mon 06-12-2021 08:55:05.607 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 7404 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 08:55:05.609 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 08:55:06.312 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 08:55:06.362 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 08:55:06.470 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$d438ce9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 08:55:06.471 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$686cd382] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 08:55:06.710 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 08:55:06.711 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 08:55:06.712 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 08:55:06.713 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 08:55:06.752 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 08:55:06.752 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1135 ms
+Mon 06-12-2021 08:55:06.784 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 08:55:06.785 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 08:55:06.808 INFO  - [  restartedMain] HikariDataSource          : HikariPool-2 - Starting...
+Mon 06-12-2021 08:55:06.812 INFO  - [  restartedMain] HikariDataSource          : HikariPool-2 - Start completed.
+Mon 06-12-2021 08:55:06.812 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 08:55:06.896 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 08:55:06.904 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 08:55:07.097 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 08:55:07.097 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 08:55:07.121 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 08:55:07.535 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 08:55:07.596 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 08:55:08.264 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 08:55:08.313 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 08:55:08.319 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 08:55:08.330 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.86 seconds (JVM running for 139.827)
+Mon 06-12-2021 08:55:08.332 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 08:55:13.414 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 08:55:13.414 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 08:55:13.416 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 08:55:13.418 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 08:55:13.418 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 08:55:13.418 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 08:55:13.575 INFO  - [nio-9119-exec-1] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 08:55:16.014 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 08:55:16.014 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 08:55:16.014 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 08:55:16.023 WARN  - [nio-9119-exec-2] SqlExceptionHelper        : SQL Error: 23505, SQLState: 23505
+Mon 06-12-2021 08:55:16.023 ERROR - [nio-9119-exec-2] SqlExceptionHelper        : Unique index or primary key violation: "PUBLIC.UK_DEC40DJ9SUJACYY3N8T5L80RY_INDEX_3 ON PUBLIC.DRONE(SERIAL_NUMBER) VALUES 1"; SQL statement:
+insert into drone (id, created_on, version, battery_capacity, current_load_weight, model, serial_number, state, weight_limit) values (null, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]
+Mon 06-12-2021 08:55:16.034 WARN  - [nio-9119-exec-2] ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_DEC40DJ9SUJACYY3N8T5L80RY_INDEX_3 ON PUBLIC.DRONE(SERIAL_NUMBER) VALUES 1"; SQL statement:
+insert into drone (id, created_on, version, battery_capacity, current_load_weight, model, serial_number, state, weight_limit) values (null, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
+Mon 06-12-2021 08:58:42.455 INFO  - [      Thread-10] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 08:58:42.455 INFO  - [      Thread-10] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 08:58:42.458 INFO  - [      Thread-10] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 08:58:42.458 INFO  - [      Thread-10] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 08:58:42.465 INFO  - [      Thread-10] HikariDataSource          : HikariPool-2 - Shutdown initiated...
+Mon 06-12-2021 08:58:42.470 INFO  - [      Thread-10] HikariDataSource          : HikariPool-2 - Shutdown completed.
+Mon 06-12-2021 08:58:42.975 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 7404 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 08:58:42.976 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 08:58:43.579 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 08:58:43.628 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 08:58:43.735 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$d438ce9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 08:58:43.736 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$686cd382] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 08:58:43.963 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 08:58:43.964 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 08:58:43.965 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 08:58:43.966 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 08:58:43.997 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 08:58:43.998 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1013 ms
+Mon 06-12-2021 08:58:44.023 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 08:58:44.024 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 08:58:44.045 INFO  - [  restartedMain] HikariDataSource          : HikariPool-3 - Starting...
+Mon 06-12-2021 08:58:44.048 INFO  - [  restartedMain] HikariDataSource          : HikariPool-3 - Start completed.
+Mon 06-12-2021 08:58:44.048 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 08:58:44.106 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 08:58:44.116 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 08:58:44.253 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 08:58:44.254 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 08:58:44.275 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 08:58:44.590 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 08:58:44.644 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 08:58:45.257 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 08:58:45.302 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 08:58:45.310 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 08:58:45.318 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.477 seconds (JVM running for 356.815)
+Mon 06-12-2021 08:58:45.324 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 08:58:52.221 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 08:58:52.222 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 08:58:52.225 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 3 ms
+Mon 06-12-2021 08:58:52.226 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 08:58:52.226 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 08:58:52.226 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 08:58:52.244 WARN  - [nio-9119-exec-1] DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `com.musala.devops.dtos.NewDroneDTO` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.musala.devops.dtos.NewDroneDTO` out of START_ARRAY token
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+Mon 06-12-2021 08:59:37.360 INFO  - [      Thread-15] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 08:59:37.361 INFO  - [      Thread-15] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 08:59:37.362 INFO  - [      Thread-15] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 08:59:37.362 INFO  - [      Thread-15] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 08:59:37.368 INFO  - [      Thread-15] HikariDataSource          : HikariPool-3 - Shutdown initiated...
+Mon 06-12-2021 08:59:37.372 INFO  - [      Thread-15] HikariDataSource          : HikariPool-3 - Shutdown completed.
+Mon 06-12-2021 08:59:37.927 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 7404 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 08:59:37.928 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 08:59:38.507 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 08:59:38.557 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 08:59:38.649 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$d438ce9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 08:59:38.650 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$686cd382] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 08:59:38.869 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 08:59:38.870 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 08:59:38.871 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 08:59:38.871 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 08:59:38.901 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 08:59:38.901 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+Mon 06-12-2021 08:59:38.928 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 08:59:38.928 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 08:59:38.944 INFO  - [  restartedMain] HikariDataSource          : HikariPool-4 - Starting...
+Mon 06-12-2021 08:59:38.948 INFO  - [  restartedMain] HikariDataSource          : HikariPool-4 - Start completed.
+Mon 06-12-2021 08:59:38.949 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 08:59:39.007 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 08:59:39.021 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 08:59:39.157 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 08:59:39.158 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 08:59:39.181 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 08:59:39.476 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 08:59:39.526 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 08:59:40.119 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 08:59:40.156 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 08:59:40.160 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 08:59:40.167 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.358 seconds (JVM running for 411.665)
+Mon 06-12-2021 08:59:40.169 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 08:59:42.481 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 08:59:42.482 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 08:59:42.484 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 08:59:42.485 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 08:59:42.485 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 08:59:42.485 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 08:59:42.506 WARN  - [nio-9119-exec-1] ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `com.musala.devops.dtos.NewDroneDTO` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.musala.devops.dtos.NewDroneDTO` out of START_ARRAY token
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+Mon 06-12-2021 09:00:00.004 INFO  - [   scheduling-1] CronJobs                  : ------------>>>> Logging Drone Battery Level
+Mon 06-12-2021 09:00:00.270 INFO  - [   scheduling-1] DroneBatteryLogServiceImpl : ------->>>> No Drone Found
+Mon 06-12-2021 09:00:02.545 INFO  - [      Thread-20] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:00:02.546 INFO  - [      Thread-20] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:00:02.554 INFO  - [      Thread-20] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:00:02.555 INFO  - [      Thread-20] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:00:02.579 INFO  - [      Thread-20] HikariDataSource          : HikariPool-4 - Shutdown initiated...
+Mon 06-12-2021 09:00:02.618 INFO  - [      Thread-20] HikariDataSource          : HikariPool-4 - Shutdown completed.
+Mon 06-12-2021 09:00:04.259 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 7404 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:00:04.262 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:00:05.827 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:00:05.985 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:00:06.216 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$d438ce9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:00:06.220 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$686cd382] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:00:06.544 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:00:06.547 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:00:06.549 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:00:06.551 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:00:06.649 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:00:06.649 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2374 ms
+Mon 06-12-2021 09:00:06.760 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:00:06.762 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:00:06.839 INFO  - [  restartedMain] HikariDataSource          : HikariPool-5 - Starting...
+Mon 06-12-2021 09:00:06.844 INFO  - [  restartedMain] HikariDataSource          : HikariPool-5 - Start completed.
+Mon 06-12-2021 09:00:06.844 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:00:07.041 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:00:07.113 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:00:07.491 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:00:07.491 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:00:07.515 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:00:07.901 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:00:07.950 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:00:08.584 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:00:08.616 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:00:08.627 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:00:08.636 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 4.822 seconds (JVM running for 440.133)
+Mon 06-12-2021 09:00:08.639 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:00:44.497 INFO  - [      Thread-25] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:00:44.498 INFO  - [      Thread-25] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:00:44.499 INFO  - [      Thread-25] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:00:44.500 INFO  - [      Thread-25] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:00:44.508 INFO  - [      Thread-25] HikariDataSource          : HikariPool-5 - Shutdown initiated...
+Mon 06-12-2021 09:00:44.519 INFO  - [      Thread-25] HikariDataSource          : HikariPool-5 - Shutdown completed.
+Mon 06-12-2021 09:00:51.244 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 7404 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:00:51.245 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:00:51.764 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:00:51.814 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:00:51.902 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$d438ce9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:00:51.903 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$686cd382] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:00:52.021 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:00:52.023 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:00:52.025 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:00:52.026 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:00:52.102 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:00:52.102 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 850 ms
+Mon 06-12-2021 09:00:52.149 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:00:52.150 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:00:52.177 INFO  - [  restartedMain] HikariDataSource          : HikariPool-7 - Starting...
+Mon 06-12-2021 09:00:52.181 INFO  - [  restartedMain] HikariDataSource          : HikariPool-7 - Start completed.
+Mon 06-12-2021 09:00:52.182 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:00:52.246 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:00:52.255 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:00:52.360 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:00:52.360 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:00:52.390 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:00:52.686 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:00:52.730 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:00:53.365 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:00:53.398 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:00:53.407 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:00:53.414 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.276 seconds (JVM running for 484.911)
+Mon 06-12-2021 09:00:53.417 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) found beans of type 'javax.sql.DataSource' getDataSource (OnBeanCondition)
+      Matched:
+         - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+
+   DevToolsDataSourceAutoConfiguration:
+      Did not match:
+         - DevTools DataSource Condition did not find an auto-configured DataSource (DevToolsDataSourceAutoConfiguration.DevToolsDataSourceCondition)
+      Matched:
+         - Devtools devtools enabled. (OnEnabledDevToolsCondition)
+
+   DevToolsDataSourceAutoConfiguration.DatabaseShutdownExecutorEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - Ancestor org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+Mon 06-12-2021 09:00:54.186 INFO  - [on(2)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Mon 06-12-2021 09:00:54.643 INFO  - [on(2)-127.0.0.1] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:00:54.644 INFO  - [on(2)-127.0.0.1] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:00:54.645 INFO  - [on(2)-127.0.0.1] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:00:54.645 INFO  - [on(2)-127.0.0.1] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:00:54.655 INFO  - [on(2)-127.0.0.1] HikariDataSource          : HikariPool-7 - Shutdown initiated...
+Mon 06-12-2021 09:00:54.665 INFO  - [on(2)-127.0.0.1] HikariDataSource          : HikariPool-7 - Shutdown completed.
+Mon 06-12-2021 09:01:07.136 INFO  - [kground-preinit] Version                   : HV000001: Hibernate Validator 6.1.6.Final
+Mon 06-12-2021 09:01:07.201 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:01:07.213 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:01:07.382 INFO  - [  restartedMain] DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Mon 06-12-2021 09:01:07.383 INFO  - [  restartedMain] DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+Mon 06-12-2021 09:01:09.183 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:01:09.322 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:01:09.785 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:01:09.788 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:01:10.697 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:01:10.715 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:01:10.716 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:01:10.717 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:01:11.213 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:01:11.213 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3827 ms
+Mon 06-12-2021 09:01:11.419 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:01:11.426 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:01:11.490 INFO  - [  restartedMain] HikariDataSource          : HikariPool-1 - Starting...
+Mon 06-12-2021 09:01:11.682 INFO  - [  restartedMain] HikariDataSource          : HikariPool-1 - Start completed.
+Mon 06-12-2021 09:01:11.694 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:01:11.908 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:01:11.991 INFO  - [  restartedMain] Version                   : HHH000412: Hibernate ORM core version 5.4.25.Final
+Mon 06-12-2021 09:01:12.209 INFO  - [  restartedMain] Version                   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Mon 06-12-2021 09:01:12.416 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:01:13.741 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:01:13.756 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:01:13.826 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:01:14.848 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:01:14.993 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:01:17.216 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:01:17.331 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:01:17.371 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:01:17.408 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 10.873 seconds (JVM running for 13.246)
+Mon 06-12-2021 09:01:18.215 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:01:18.216 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:01:18.219 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 3 ms
+Mon 06-12-2021 09:01:18.232 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:01:18.233 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:01:18.233 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:01:18.712 INFO  - [nio-9119-exec-1] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 09:02:22.571 INFO  - [       Thread-6] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:02:22.574 INFO  - [       Thread-6] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:02:22.583 INFO  - [       Thread-6] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:02:22.587 INFO  - [       Thread-6] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:02:22.618 INFO  - [       Thread-6] HikariDataSource          : HikariPool-1 - Shutdown initiated...
+Mon 06-12-2021 09:02:22.626 INFO  - [       Thread-6] HikariDataSource          : HikariPool-1 - Shutdown completed.
+Mon 06-12-2021 09:02:23.477 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:02:23.478 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:02:24.117 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:02:24.172 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:02:24.288 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:02:24.289 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:02:24.579 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:02:24.581 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:02:24.583 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:02:24.584 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:02:24.648 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:02:24.649 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1164 ms
+Mon 06-12-2021 09:02:24.688 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:02:24.690 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:02:24.724 INFO  - [  restartedMain] HikariDataSource          : HikariPool-2 - Starting...
+Mon 06-12-2021 09:02:24.730 INFO  - [  restartedMain] HikariDataSource          : HikariPool-2 - Start completed.
+Mon 06-12-2021 09:02:24.730 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:02:24.816 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:02:24.827 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:02:25.069 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:02:25.070 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:02:25.128 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:02:25.663 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:02:25.731 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:02:26.648 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:02:26.700 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:02:26.706 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:02:26.715 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 3.429 seconds (JVM running for 82.553)
+Mon 06-12-2021 09:02:26.718 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:02:28.599 INFO  - [      Thread-10] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:02:28.600 INFO  - [      Thread-10] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:02:28.603 INFO  - [      Thread-10] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:02:28.603 INFO  - [      Thread-10] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:02:28.623 INFO  - [      Thread-10] HikariDataSource          : HikariPool-2 - Shutdown initiated...
+Mon 06-12-2021 09:02:28.628 INFO  - [      Thread-10] HikariDataSource          : HikariPool-2 - Shutdown completed.
+Mon 06-12-2021 09:02:29.185 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:02:29.186 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:02:29.625 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:02:29.668 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:02:29.755 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:02:29.755 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:02:29.900 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:02:29.902 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:02:29.903 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:02:29.906 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:02:29.956 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:02:29.956 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 761 ms
+Mon 06-12-2021 09:02:30.014 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:02:30.018 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:02:30.061 INFO  - [  restartedMain] HikariDataSource          : HikariPool-3 - Starting...
+Mon 06-12-2021 09:02:30.069 INFO  - [  restartedMain] HikariDataSource          : HikariPool-3 - Start completed.
+Mon 06-12-2021 09:02:30.070 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:02:30.144 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:02:30.154 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:02:30.318 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:02:30.319 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:02:30.343 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:02:30.673 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:02:30.723 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:02:31.541 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:02:31.594 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:02:31.599 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:02:31.606 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.556 seconds (JVM running for 87.445)
+Mon 06-12-2021 09:02:31.618 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:03:17.148 INFO  - [      Thread-15] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:03:17.149 INFO  - [      Thread-15] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:03:17.151 INFO  - [      Thread-15] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:03:17.152 INFO  - [      Thread-15] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:03:17.183 INFO  - [      Thread-15] HikariDataSource          : HikariPool-3 - Shutdown initiated...
+Mon 06-12-2021 09:03:17.193 INFO  - [      Thread-15] HikariDataSource          : HikariPool-3 - Shutdown completed.
+Mon 06-12-2021 09:03:49.643 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:03:49.645 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:03:52.055 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:03:52.309 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 253 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:03:52.567 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:03:52.569 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:03:52.898 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:03:52.900 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:03:52.900 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:03:52.901 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:03:52.929 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:03:52.930 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3219 ms
+Mon 06-12-2021 09:03:52.966 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:03:52.967 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:03:52.983 INFO  - [  restartedMain] HikariDataSource          : HikariPool-4 - Starting...
+Mon 06-12-2021 09:03:52.988 INFO  - [  restartedMain] HikariDataSource          : HikariPool-4 - Start completed.
+Mon 06-12-2021 09:03:52.988 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:03:53.048 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:03:53.060 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:03:53.206 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:03:53.206 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:03:53.230 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:03:53.556 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:03:53.627 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:03:54.320 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:03:54.353 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:03:54.358 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:03:54.364 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 5.081 seconds (JVM running for 170.203)
+Mon 06-12-2021 09:03:54.366 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:04:27.425 INFO  - [      Thread-20] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:04:27.426 INFO  - [      Thread-20] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:04:27.427 INFO  - [      Thread-20] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:04:27.427 INFO  - [      Thread-20] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:04:27.435 INFO  - [      Thread-20] HikariDataSource          : HikariPool-4 - Shutdown initiated...
+Mon 06-12-2021 09:04:27.441 INFO  - [      Thread-20] HikariDataSource          : HikariPool-4 - Shutdown completed.
+Mon 06-12-2021 09:04:28.294 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:04:28.307 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:04:29.092 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:04:29.137 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:04:29.232 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:04:29.233 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:04:29.485 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:04:29.487 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:04:29.487 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:04:29.488 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:04:29.519 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:04:29.519 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1182 ms
+Mon 06-12-2021 09:04:29.549 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:04:29.550 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:04:29.573 INFO  - [  restartedMain] HikariDataSource          : HikariPool-5 - Starting...
+Mon 06-12-2021 09:04:29.576 INFO  - [  restartedMain] HikariDataSource          : HikariPool-5 - Start completed.
+Mon 06-12-2021 09:04:29.576 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:04:29.632 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:04:29.645 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:04:29.795 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:04:29.796 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:04:29.818 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:04:30.148 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:04:30.203 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:04:30.995 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:04:31.100 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:04:31.115 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:04:31.141 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 3.075 seconds (JVM running for 206.979)
+Mon 06-12-2021 09:04:31.147 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:05:00.646 INFO  - [           main] SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.musala.devops.MusalaDroneAppApplicationTests], using SpringBootContextLoader
+Mon 06-12-2021 09:05:00.693 INFO  - [           main] AbstractContextLoader     : Could not detect default resource locations for test class [com.musala.devops.MusalaDroneAppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+Mon 06-12-2021 09:05:00.696 INFO  - [           main] AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.musala.devops.MusalaDroneAppApplicationTests]: MusalaDroneAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Mon 06-12-2021 09:05:01.214 INFO  - [           main] SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.musala.devops.MusalaDroneAppApplication for test class com.musala.devops.MusalaDroneAppApplicationTests
+Mon 06-12-2021 09:05:01.496 INFO  - [           main] SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Mon 06-12-2021 09:05:01.584 INFO  - [           main] SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@363042d7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@366ac49b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6ad59d92, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@56f0cc85, org.springframework.test.context.support.DirtiesContextTestExecutionListener@62e20a76, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2cc44ad, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@44b3606b, org.springframework.test.context.event.EventPublishingTestExecutionListener@1477089c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@663411de, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@63dd899, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@59d2400d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@75cd8043, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33b1c5c5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b202a3a]
+Mon 06-12-2021 09:05:03.217 INFO  - [kground-preinit] Version                   : HV000001: Hibernate Validator 6.1.6.Final
+Mon 06-12-2021 09:05:03.346 INFO  - [           main] MusalaDroneAppApplicationTests : Starting MusalaDroneAppApplicationTests using Java 1.8.0_221 on DESKTOP-2N2OQGT with PID 15272 (started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:05:03.502 INFO  - [           main] MusalaDroneAppApplicationTests : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:05:07.847 INFO  - [           main] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:05:08.241 INFO  - [           main] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 362 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:05:09.498 INFO  - [           main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$91f65a44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:05:09.502 INFO  - [           main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$262a5f2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:05:11.249 INFO  - [           main] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:05:11.266 INFO  - [           main] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:05:11.958 INFO  - [           main] HikariDataSource          : HikariPool-1 - Starting...
+Mon 06-12-2021 09:05:12.822 INFO  - [           main] HikariDataSource          : HikariPool-1 - Start completed.
+Mon 06-12-2021 09:05:13.223 INFO  - [           main] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:05:13.559 INFO  - [           main] Version                   : HHH000412: Hibernate ORM core version 5.4.25.Final
+Mon 06-12-2021 09:05:14.291 INFO  - [           main] Version                   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Mon 06-12-2021 09:05:15.643 INFO  - [           main] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:05:18.090 INFO  - [           main] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:05:18.116 INFO  - [           main] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:05:22.937 WARN  - [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:05:23.658 INFO  - [           main] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:05:29.266 INFO  - [           main] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:05:29.634 INFO  - [           main] MusalaDroneAppApplicationTests : Started MusalaDroneAppApplicationTests in 27.47 seconds (JVM running for 32.861)
+Mon 06-12-2021 09:05:30.691 INFO  - [extShutdownHook] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:05:30.695 INFO  - [extShutdownHook] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:05:30.703 INFO  - [extShutdownHook] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:05:30.704 INFO  - [extShutdownHook] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:05:30.779 INFO  - [extShutdownHook] HikariDataSource          : HikariPool-1 - Shutdown initiated...
+Mon 06-12-2021 09:05:30.790 INFO  - [extShutdownHook] HikariDataSource          : HikariPool-1 - Shutdown completed.
+Mon 06-12-2021 09:06:17.599 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:06:17.600 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:06:17.602 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 09:06:17.603 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:06:17.603 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:06:17.603 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:06:17.708 INFO  - [nio-9119-exec-1] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 09:07:29.796 INFO  - [      Thread-29] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:07:29.797 INFO  - [      Thread-29] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:07:29.798 INFO  - [      Thread-29] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:07:29.798 INFO  - [      Thread-29] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:07:29.805 INFO  - [      Thread-29] HikariDataSource          : HikariPool-5 - Shutdown initiated...
+Mon 06-12-2021 09:07:29.810 INFO  - [      Thread-29] HikariDataSource          : HikariPool-5 - Shutdown completed.
+Mon 06-12-2021 09:07:30.395 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:07:30.397 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:07:30.963 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:07:31.011 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:07:31.100 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:07:31.101 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:07:31.300 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:07:31.303 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:07:31.304 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:07:31.305 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:07:31.355 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:07:31.355 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 948 ms
+Mon 06-12-2021 09:07:31.381 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:07:31.382 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:07:31.399 INFO  - [  restartedMain] HikariDataSource          : HikariPool-6 - Starting...
+Mon 06-12-2021 09:07:31.403 INFO  - [  restartedMain] HikariDataSource          : HikariPool-6 - Start completed.
+Mon 06-12-2021 09:07:31.403 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:07:31.464 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:07:31.478 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:07:31.596 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:07:31.596 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:07:31.622 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:07:31.935 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:07:31.978 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:07:32.553 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:07:32.584 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:07:32.589 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:07:32.595 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.331 seconds (JVM running for 388.434)
+Mon 06-12-2021 09:07:32.597 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:07:41.698 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:07:41.698 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:07:41.700 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 09:07:41.701 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:07:41.701 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:07:41.701 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:07:42.086 ERROR - [nio-9119-exec-1] [dispatcherServlet]       : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.ConstraintViolationException: saveDrone.newDroneDTOs[0].serialNumber: may have unsafe html content] with root cause
+javax.validation.ConstraintViolationException: saveDrone.newDroneDTOs[0].serialNumber: may have unsafe html content
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:120)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.musala.devops.controllers.DispatchController$$EnhancerBySpringCGLIB$$8667358d.saveDrone(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.musala.devops.filters.FilterConfig.doFilter(FilterConfig.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Mon 06-12-2021 09:08:31.042 INFO  - [      Thread-34] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:08:31.043 INFO  - [      Thread-34] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:08:31.045 INFO  - [      Thread-34] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:08:31.045 INFO  - [      Thread-34] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:08:31.052 INFO  - [      Thread-34] HikariDataSource          : HikariPool-6 - Shutdown initiated...
+Mon 06-12-2021 09:08:31.056 INFO  - [      Thread-34] HikariDataSource          : HikariPool-6 - Shutdown completed.
+Mon 06-12-2021 09:08:31.848 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:08:31.850 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:08:32.521 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:08:32.576 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:08:32.679 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:08:32.679 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:08:32.930 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:08:32.931 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:08:32.932 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:08:32.933 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:08:32.963 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:08:32.964 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1106 ms
+Mon 06-12-2021 09:08:32.990 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:08:32.991 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:08:33.008 INFO  - [  restartedMain] HikariDataSource          : HikariPool-7 - Starting...
+Mon 06-12-2021 09:08:33.011 INFO  - [  restartedMain] HikariDataSource          : HikariPool-7 - Start completed.
+Mon 06-12-2021 09:08:33.011 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:08:33.066 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:08:33.074 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:08:33.193 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:08:33.193 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:08:33.223 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:08:33.519 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:08:33.561 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:08:34.171 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:08:34.205 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:08:34.210 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:08:34.217 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.52 seconds (JVM running for 450.055)
+Mon 06-12-2021 09:08:34.219 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:08:42.615 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:08:42.615 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:08:42.618 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 3 ms
+Mon 06-12-2021 09:08:42.620 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:08:42.621 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:08:42.621 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:08:42.842 WARN  - [nio-9119-exec-1] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: saveDrone.newDroneDTOs[0].serialNumber: may have unsafe html content]
+Mon 06-12-2021 09:09:00.626 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:09:00.626 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:09:00.626 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:09:00.644 WARN  - [nio-9119-exec-2] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: saveDrone.newDroneDTOs[0].batteryCapacity: must be less than or equal to 100]
+Mon 06-12-2021 09:09:29.547 INFO  - [      Thread-39] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:09:29.548 INFO  - [      Thread-39] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:09:29.548 INFO  - [      Thread-39] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:09:29.549 INFO  - [      Thread-39] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:09:29.554 INFO  - [      Thread-39] HikariDataSource          : HikariPool-7 - Shutdown initiated...
+Mon 06-12-2021 09:09:29.558 INFO  - [      Thread-39] HikariDataSource          : HikariPool-7 - Shutdown completed.
+Mon 06-12-2021 09:09:30.228 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:09:30.229 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:09:30.740 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:09:30.783 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:09:30.864 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:09:30.865 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:09:31.059 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:09:31.060 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:09:31.060 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:09:31.060 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:09:31.140 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:09:31.140 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 904 ms
+Mon 06-12-2021 09:09:31.178 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:09:31.178 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:09:31.199 INFO  - [  restartedMain] HikariDataSource          : HikariPool-8 - Starting...
+Mon 06-12-2021 09:09:31.202 INFO  - [  restartedMain] HikariDataSource          : HikariPool-8 - Start completed.
+Mon 06-12-2021 09:09:31.202 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:09:31.268 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:09:31.276 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:09:31.390 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:09:31.391 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:09:31.416 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:09:31.690 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:09:31.733 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:09:32.328 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:09:32.367 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:09:32.371 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:09:32.379 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.281 seconds (JVM running for 508.217)
+Mon 06-12-2021 09:09:32.380 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:09:38.499 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:09:38.499 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:09:38.501 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 09:09:38.502 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:09:38.503 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:09:38.503 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:09:38.594 INFO  - [nio-9119-exec-1] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 09:09:44.776 INFO  - [nio-9119-exec-3] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:09:44.776 INFO  - [nio-9119-exec-3] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:09:44.776 INFO  - [nio-9119-exec-3] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:09:44.788 WARN  - [nio-9119-exec-3] SqlExceptionHelper        : SQL Error: 23505, SQLState: 23505
+Mon 06-12-2021 09:09:44.789 ERROR - [nio-9119-exec-3] SqlExceptionHelper        : Unique index or primary key violation: "PUBLIC.UK_DEC40DJ9SUJACYY3N8T5L80RY_INDEX_3 ON PUBLIC.DRONE(SERIAL_NUMBER) VALUES 1"; SQL statement:
+insert into drone (id, created_on, version, battery_capacity, current_load_weight, model, serial_number, state, weight_limit) values (null, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]
+Mon 06-12-2021 09:09:44.843 WARN  - [nio-9119-exec-3] ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_DEC40DJ9SUJACYY3N8T5L80RY_INDEX_3 ON PUBLIC.DRONE(SERIAL_NUMBER) VALUES 1"; SQL statement:
+insert into drone (id, created_on, version, battery_capacity, current_load_weight, model, serial_number, state, weight_limit) values (null, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
+Mon 06-12-2021 09:10:03.087 INFO  - [      Thread-44] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:10:03.088 INFO  - [      Thread-44] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:10:03.089 INFO  - [      Thread-44] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:10:03.089 INFO  - [      Thread-44] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:10:03.095 INFO  - [      Thread-44] HikariDataSource          : HikariPool-8 - Shutdown initiated...
+Mon 06-12-2021 09:10:03.099 INFO  - [      Thread-44] HikariDataSource          : HikariPool-8 - Shutdown completed.
+Mon 06-12-2021 09:10:03.761 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:10:03.763 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:10:04.302 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:10:04.357 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:10:04.454 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:10:04.456 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:10:04.666 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:10:04.668 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:10:04.668 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:10:04.669 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:10:04.701 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:10:04.701 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 929 ms
+Mon 06-12-2021 09:10:04.727 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:10:04.728 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:10:04.753 INFO  - [  restartedMain] HikariDataSource          : HikariPool-9 - Starting...
+Mon 06-12-2021 09:10:04.756 INFO  - [  restartedMain] HikariDataSource          : HikariPool-9 - Start completed.
+Mon 06-12-2021 09:10:04.756 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:10:04.808 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:10:04.816 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:10:04.933 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:10:04.933 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:10:04.955 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:10:05.282 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:10:05.322 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:10:06.001 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:10:06.035 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:10:06.039 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:10:06.047 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.413 seconds (JVM running for 541.886)
+Mon 06-12-2021 09:10:06.051 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:10:09.698 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:10:09.699 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:10:09.702 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 09:10:09.703 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:10:09.703 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:10:09.703 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:10:09.775 INFO  - [nio-9119-exec-1] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 09:10:18.185 INFO  - [      Thread-49] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:10:18.186 INFO  - [      Thread-49] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:10:18.186 INFO  - [      Thread-49] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:10:18.187 INFO  - [      Thread-49] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:10:18.191 INFO  - [      Thread-49] HikariDataSource          : HikariPool-9 - Shutdown initiated...
+Mon 06-12-2021 09:10:18.195 INFO  - [      Thread-49] HikariDataSource          : HikariPool-9 - Shutdown completed.
+Mon 06-12-2021 09:10:18.706 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:10:18.708 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:10:19.220 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:10:19.268 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:10:19.365 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:10:19.366 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:10:19.522 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:10:19.524 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:10:19.524 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:10:19.524 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:10:19.574 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:10:19.575 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 862 ms
+Mon 06-12-2021 09:10:19.603 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:10:19.605 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:10:19.640 INFO  - [  restartedMain] HikariDataSource          : HikariPool-10 - Starting...
+Mon 06-12-2021 09:10:19.645 INFO  - [  restartedMain] HikariDataSource          : HikariPool-10 - Start completed.
+Mon 06-12-2021 09:10:19.646 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:10:19.718 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:10:19.726 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:10:19.819 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:10:19.820 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:10:19.846 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:10:20.151 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:10:20.192 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:10:20.884 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:10:20.919 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:10:20.925 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:10:20.936 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.337 seconds (JVM running for 556.774)
+Mon 06-12-2021 09:10:20.939 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:10:24.030 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:10:24.031 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:10:24.032 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 1 ms
+Mon 06-12-2021 09:10:24.033 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:10:24.033 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:10:24.033 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:10:24.202 WARN  - [nio-9119-exec-1] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: saveDrone.newDroneDTOs[0].batteryCapacity: must be less than or equal to 100]
+Mon 06-12-2021 09:11:24.416 INFO  - [      Thread-54] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:11:24.417 INFO  - [      Thread-54] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:11:24.417 INFO  - [      Thread-54] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:11:24.418 INFO  - [      Thread-54] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:11:24.424 INFO  - [      Thread-54] HikariDataSource          : HikariPool-10 - Shutdown initiated...
+Mon 06-12-2021 09:11:24.428 INFO  - [      Thread-54] HikariDataSource          : HikariPool-10 - Shutdown completed.
+Mon 06-12-2021 09:11:25.138 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:11:25.139 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:11:25.704 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:11:25.758 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:11:25.875 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:11:25.876 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:11:26.178 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:11:26.179 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:11:26.180 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:11:26.180 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:11:26.211 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:11:26.211 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1068 ms
+Mon 06-12-2021 09:11:26.242 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:11:26.243 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:11:26.261 INFO  - [  restartedMain] HikariDataSource          : HikariPool-11 - Starting...
+Mon 06-12-2021 09:11:26.268 INFO  - [  restartedMain] HikariDataSource          : HikariPool-11 - Start completed.
+Mon 06-12-2021 09:11:26.269 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:11:26.361 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:11:26.372 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:11:26.470 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:11:26.471 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:11:26.495 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:11:26.859 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:11:26.909 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:11:27.611 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:11:27.648 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:11:27.652 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:11:27.659 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.749 seconds (JVM running for 623.497)
+Mon 06-12-2021 09:11:27.662 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:11:39.291 INFO  - [nio-9119-exec-2] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:11:39.291 INFO  - [nio-9119-exec-2] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:11:39.293 INFO  - [nio-9119-exec-2] DispatcherServlet         : Completed initialization in 1 ms
+Mon 06-12-2021 09:11:39.295 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:11:39.295 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:11:39.295 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:11:39.499 WARN  - [nio-9119-exec-2] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: saveDrone.newDroneDTOs[0].serialNumber: length must be between 0 and 100, saveDrone.newDroneDTOs[0].batteryCapacity: must be less than or equal to 100]
+Mon 06-12-2021 09:12:03.361 INFO  - [      Thread-59] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:12:03.363 INFO  - [      Thread-59] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:12:03.364 INFO  - [      Thread-59] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:12:03.364 INFO  - [      Thread-59] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:12:03.368 INFO  - [      Thread-59] HikariDataSource          : HikariPool-11 - Shutdown initiated...
+Mon 06-12-2021 09:12:03.374 INFO  - [      Thread-59] HikariDataSource          : HikariPool-11 - Shutdown completed.
+Mon 06-12-2021 09:12:03.967 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:12:03.969 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:12:04.627 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:12:04.683 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:12:04.827 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:12:04.827 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:12:05.133 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:12:05.134 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:12:05.135 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:12:05.135 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:12:05.247 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:12:05.247 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1270 ms
+Mon 06-12-2021 09:12:05.283 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:12:05.284 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:12:05.300 INFO  - [  restartedMain] HikariDataSource          : HikariPool-12 - Starting...
+Mon 06-12-2021 09:12:05.302 INFO  - [  restartedMain] HikariDataSource          : HikariPool-12 - Start completed.
+Mon 06-12-2021 09:12:05.303 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:12:05.389 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:12:05.398 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:12:05.486 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:12:05.487 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:12:05.517 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:12:05.859 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:12:05.920 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:12:06.553 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:12:06.588 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:12:06.592 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:12:06.599 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.769 seconds (JVM running for 662.437)
+Mon 06-12-2021 09:12:06.601 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:12:11.027 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:12:11.027 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:12:11.029 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 09:12:11.030 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:12:11.030 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:12:11.030 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:12:11.210 WARN  - [nio-9119-exec-1] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: saveDrone.newDroneDTOs[0].batteryCapacity: must be less than or equal to 100, saveDrone.newDroneDTOs[0].serialNumber: length must be between 12 and 100]
+Mon 06-12-2021 09:12:29.010 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:12:29.010 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:12:29.010 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:12:29.017 WARN  - [nio-9119-exec-2] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: saveDrone.newDroneDTOs[0].serialNumber: length must be between 12 and 100]
+Mon 06-12-2021 09:18:37.510 INFO  - [      Thread-64] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:18:37.511 INFO  - [      Thread-64] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:18:37.512 INFO  - [      Thread-64] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:18:37.513 INFO  - [      Thread-64] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:18:37.518 INFO  - [      Thread-64] HikariDataSource          : HikariPool-12 - Shutdown initiated...
+Mon 06-12-2021 09:18:37.523 INFO  - [      Thread-64] HikariDataSource          : HikariPool-12 - Shutdown completed.
+Mon 06-12-2021 09:18:38.123 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:18:38.124 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:18:38.636 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:18:38.685 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:18:38.781 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:18:38.781 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:18:39.023 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:18:39.025 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:18:39.025 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:18:39.026 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:18:39.094 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:18:39.095 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 966 ms
+Mon 06-12-2021 09:18:39.130 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:18:39.131 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:18:39.152 INFO  - [  restartedMain] HikariDataSource          : HikariPool-13 - Starting...
+Mon 06-12-2021 09:18:39.156 INFO  - [  restartedMain] HikariDataSource          : HikariPool-13 - Start completed.
+Mon 06-12-2021 09:18:39.156 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:18:39.220 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:18:39.229 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:18:39.338 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:18:39.339 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:18:39.372 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:18:39.668 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:18:39.713 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:18:40.306 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:18:40.340 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:18:40.345 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:18:40.352 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.343 seconds (JVM running for 1056.19)
+Mon 06-12-2021 09:18:40.354 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:18:52.212 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:18:52.212 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:18:52.214 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 09:18:52.216 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:18:52.216 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:18:52.216 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:18:52.402 INFO  - [nio-9119-exec-1] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 09:19:19.898 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> HTTP METHOD: PUT
+Mon 06-12-2021 09:19:19.898 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> REQUEST URI: /app/v1/load-drone/1
+Mon 06-12-2021 09:19:19.898 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:19:20.038 WARN  - [nio-9119-exec-2] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: loadDrone.medicationDTOs[0].name: must match "[a-zA-Z]+[0-9]+-_"]
+Mon 06-12-2021 09:19:31.638 WARN  - [nio-9119-exec-5] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: loadDrone.medicationDTOs[0].name: must match "[a-zA-Z]+[0-9]+-_"]
+Mon 06-12-2021 09:19:31.628 INFO  - [nio-9119-exec-5] FilterConfig              : ---->>> HTTP METHOD: PUT
+Mon 06-12-2021 09:19:31.628 INFO  - [nio-9119-exec-5] FilterConfig              : ---->>> REQUEST URI: /app/v1/load-drone/1
+Mon 06-12-2021 09:19:31.628 INFO  - [nio-9119-exec-5] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:19:36.824 INFO  - [nio-9119-exec-4] FilterConfig              : ---->>> HTTP METHOD: PUT
+Mon 06-12-2021 09:19:36.824 INFO  - [nio-9119-exec-4] FilterConfig              : ---->>> REQUEST URI: /app/v1/load-drone/1
+Mon 06-12-2021 09:19:36.824 INFO  - [nio-9119-exec-4] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:19:36.831 WARN  - [nio-9119-exec-4] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: loadDrone.medicationDTOs[0].name: must match "[a-zA-Z]+[0-9]+-_"]
+Mon 06-12-2021 09:20:35.003 INFO  - [      Thread-69] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:20:35.003 INFO  - [      Thread-69] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:20:35.004 INFO  - [      Thread-69] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:20:35.004 INFO  - [      Thread-69] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:20:35.008 INFO  - [      Thread-69] HikariDataSource          : HikariPool-13 - Shutdown initiated...
+Mon 06-12-2021 09:20:35.013 INFO  - [      Thread-69] HikariDataSource          : HikariPool-13 - Shutdown completed.
+Mon 06-12-2021 09:20:35.569 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:20:35.570 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:20:36.077 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:20:36.138 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:20:36.226 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:20:36.226 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:20:36.434 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:20:36.435 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:20:36.435 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:20:36.436 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:20:36.481 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:20:36.481 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 903 ms
+Mon 06-12-2021 09:20:36.515 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:20:36.516 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:20:36.532 INFO  - [  restartedMain] HikariDataSource          : HikariPool-14 - Starting...
+Mon 06-12-2021 09:20:36.553 INFO  - [  restartedMain] HikariDataSource          : HikariPool-14 - Start completed.
+Mon 06-12-2021 09:20:36.553 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:20:36.677 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:20:36.684 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:20:36.782 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:20:36.783 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:20:36.813 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:20:37.120 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:20:37.165 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:20:37.801 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:20:37.833 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:20:37.838 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:20:37.845 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.379 seconds (JVM running for 1173.683)
+Mon 06-12-2021 09:20:37.847 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:20:42.486 INFO  - [nio-9119-exec-1] [/]                       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 06-12-2021 09:20:42.486 INFO  - [nio-9119-exec-1] DispatcherServlet         : Initializing Servlet 'dispatcherServlet'
+Mon 06-12-2021 09:20:42.488 INFO  - [nio-9119-exec-1] DispatcherServlet         : Completed initialization in 2 ms
+Mon 06-12-2021 09:20:42.489 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> HTTP METHOD: PUT
+Mon 06-12-2021 09:20:42.490 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> REQUEST URI: /app/v1/load-drone/1
+Mon 06-12-2021 09:20:42.490 INFO  - [nio-9119-exec-1] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:20:42.677 WARN  - [nio-9119-exec-1] ExceptionHandlerExceptionResolver : Resolved [javax.validation.ConstraintViolationException: loadDrone.medicationDTOs[0].name: must match "[a-zA-Z]+|[0-9]+|-_"]
+Mon 06-12-2021 09:21:41.689 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> HTTP METHOD: PUT
+Mon 06-12-2021 09:21:41.689 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> REQUEST URI: /app/v1/load-drone/1
+Mon 06-12-2021 09:21:41.689 INFO  - [nio-9119-exec-2] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:21:41.789 WARN  - [nio-9119-exec-2] ExceptionHandlerExceptionResolver : Resolved [com.musala.devops.exceptions.DroneDetailsException: No such drone found]
+Mon 06-12-2021 09:21:56.043 INFO  - [nio-9119-exec-3] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:21:56.044 INFO  - [nio-9119-exec-3] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:21:56.044 INFO  - [nio-9119-exec-3] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:21:56.085 INFO  - [nio-9119-exec-3] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 09:22:02.915 INFO  - [nio-9119-exec-5] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:22:02.915 INFO  - [nio-9119-exec-5] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:22:02.915 INFO  - [nio-9119-exec-5] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:22:02.924 INFO  - [nio-9119-exec-5] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 09:22:10.657 INFO  - [nio-9119-exec-7] FilterConfig              : ---->>> HTTP METHOD: POST
+Mon 06-12-2021 09:22:10.657 INFO  - [nio-9119-exec-7] FilterConfig              : ---->>> REQUEST URI: /app/v1/save-drone
+Mon 06-12-2021 09:22:10.657 INFO  - [nio-9119-exec-7] FilterConfig              : ---->>> SOURCE IP: 0:0:0:0:0:0:0:1
+Mon 06-12-2021 09:22:10.663 INFO  - [nio-9119-exec-7] DroneServiceImpl          : -------------->>> 1 Drone(s) saved succesfully
+Mon 06-12-2021 09:22:25.325 INFO  - [      Thread-74] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:22:25.325 INFO  - [      Thread-74] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:22:25.327 INFO  - [      Thread-74] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:22:25.327 INFO  - [      Thread-74] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:22:25.331 INFO  - [      Thread-74] HikariDataSource          : HikariPool-14 - Shutdown initiated...
+Mon 06-12-2021 09:22:25.336 INFO  - [      Thread-74] HikariDataSource          : HikariPool-14 - Shutdown completed.
+Mon 06-12-2021 09:22:25.993 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:22:25.995 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:22:26.528 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:22:26.607 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:22:26.728 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:22:26.729 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:22:26.960 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:22:26.961 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:22:26.961 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:22:26.962 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:22:26.996 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:22:26.997 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 994 ms
+Mon 06-12-2021 09:22:27.031 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:22:27.032 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:22:27.058 INFO  - [  restartedMain] HikariDataSource          : HikariPool-15 - Starting...
+Mon 06-12-2021 09:22:27.062 INFO  - [  restartedMain] HikariDataSource          : HikariPool-15 - Start completed.
+Mon 06-12-2021 09:22:27.062 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:22:27.132 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:22:27.151 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:22:27.373 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:22:27.373 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:22:27.395 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:22:27.736 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:22:27.786 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:22:28.426 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:22:28.454 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:22:28.459 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:22:28.468 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.608 seconds (JVM running for 1284.306)
+Mon 06-12-2021 09:22:28.471 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Mon 06-12-2021 09:22:35.331 INFO  - [on(2)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Mon 06-12-2021 09:22:35.520 INFO  - [      Thread-79] ThreadPoolTaskScheduler   : Shutting down ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:22:35.521 INFO  - [      Thread-79] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:22:35.521 INFO  - [      Thread-79] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:22:35.522 INFO  - [      Thread-79] SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Mon 06-12-2021 09:22:35.526 INFO  - [      Thread-79] HikariDataSource          : HikariPool-15 - Shutdown initiated...
+Mon 06-12-2021 09:22:35.532 INFO  - [      Thread-79] HikariDataSource          : HikariPool-15 - Shutdown completed.
+Mon 06-12-2021 09:22:36.275 INFO  - [  restartedMain] MusalaDroneAppApplication : Starting MusalaDroneAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1536 (C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\musala-drone-app)
+Mon 06-12-2021 09:22:36.277 INFO  - [  restartedMain] MusalaDroneAppApplication : No active profile set, falling back to default profiles: default
+Mon 06-12-2021 09:22:36.859 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Mon 06-12-2021 09:22:36.912 INFO  - [  restartedMain] RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+Mon 06-12-2021 09:22:37.004 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'configProperties' of type [com.musala.devops.config.ConfigProperties$$EnhancerBySpringCGLIB$$f1740c42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:22:37.005 INFO  - [  restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.musala.devops.config.AsyncConfig$$EnhancerBySpringCGLIB$$85a81129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Mon 06-12-2021 09:22:37.165 INFO  - [  restartedMain] TomcatWebServer           : Tomcat initialized with port(s): 9119 (http)
+Mon 06-12-2021 09:22:37.167 INFO  - [  restartedMain] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:22:37.167 INFO  - [  restartedMain] StandardService           : Starting service [Tomcat]
+Mon 06-12-2021 09:22:37.169 INFO  - [  restartedMain] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Mon 06-12-2021 09:22:37.282 INFO  - [  restartedMain] [/]                       : Initializing Spring embedded WebApplicationContext
+Mon 06-12-2021 09:22:37.282 INFO  - [  restartedMain] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 991 ms
+Mon 06-12-2021 09:22:37.306 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:22:37.307 INFO  - [  restartedMain] EncryptorUtil             : ---->>> Commencing data decryption
+Mon 06-12-2021 09:22:37.325 INFO  - [  restartedMain] HikariDataSource          : HikariPool-16 - Starting...
+Mon 06-12-2021 09:22:37.330 INFO  - [  restartedMain] HikariDataSource          : HikariPool-16 - Start completed.
+Mon 06-12-2021 09:22:37.330 INFO  - [  restartedMain] H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dronedb'
+Mon 06-12-2021 09:22:37.398 INFO  - [  restartedMain] LogHelper                 : HHH000204: Processing PersistenceUnitInfo [name: default]
+Mon 06-12-2021 09:22:37.407 INFO  - [  restartedMain] Dialect                   : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Mon 06-12-2021 09:22:37.501 INFO  - [  restartedMain] JtaPlatformInitiator      : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mon 06-12-2021 09:22:37.502 INFO  - [  restartedMain] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mon 06-12-2021 09:22:37.540 INFO  - [  restartedMain] OptionalLiveReloadServer  : LiveReload server is running on port 35729
+Mon 06-12-2021 09:22:37.908 WARN  - [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mon 06-12-2021 09:22:37.962 INFO  - [  restartedMain] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Mon 06-12-2021 09:22:38.603 INFO  - [  restartedMain] ThreadPoolTaskScheduler   : Initializing ExecutorService 'taskScheduler'
+Mon 06-12-2021 09:22:38.638 INFO  - [  restartedMain] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-9119"]
+Mon 06-12-2021 09:22:38.643 INFO  - [  restartedMain] TomcatWebServer           : Tomcat started on port(s): 9119 (http) with context path ''
+Mon 06-12-2021 09:22:38.652 INFO  - [  restartedMain] MusalaDroneAppApplication : Started MusalaDroneAppApplication in 2.483 seconds (JVM running for 1294.49)
+Mon 06-12-2021 09:22:38.654 INFO  - [  restartedMain] ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

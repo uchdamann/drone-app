@@ -3,10 +3,12 @@ package com.musala.devops.controllers;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.validation.ConstraintViolationException;
 import javax.validation.UnexpectedTypeException;
 
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -92,6 +94,16 @@ public class DispatchExceptionHandler {
 	
 	@ExceptionHandler(DataIntegrityViolationException.class)
 	public ResponseDTO<String> handleDataIntegrityViolationException(DataIntegrityViolationException ex) {
+		return ResponseDTO.newInstance(ERROR.getCode(), ERROR.getMessage(), ex.getMessage());
+	}
+	
+	@ExceptionHandler(HttpMessageNotReadableException.class)
+	public ResponseDTO<String> handleHttpMessageNotReadableException(HttpMessageNotReadableException ex) {
+		return ResponseDTO.newInstance(ERROR.getCode(), ERROR.getMessage(), ex.getMessage());
+	}
+	
+	@ExceptionHandler(ConstraintViolationException.class)
+	public ResponseDTO<String> handleConstraintViolationException(ConstraintViolationException ex) {
 		return ResponseDTO.newInstance(ERROR.getCode(), ERROR.getMessage(), ex.getMessage());
 	}
 }

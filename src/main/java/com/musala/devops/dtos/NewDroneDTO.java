@@ -5,6 +5,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.SafeHtml;
 import org.hibernate.validator.constraints.SafeHtml.WhiteListType;
 
@@ -18,6 +19,7 @@ import lombok.NoArgsConstructor;
 @SuppressWarnings("deprecation")
 public class NewDroneDTO {
 	@NotBlank
+	@Length(max = 100, min = 12)
 	@SafeHtml(whitelistType = WhiteListType.NONE)
 	private String serialNumber;
 	@NotNull

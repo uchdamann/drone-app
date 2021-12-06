@@ -6,6 +6,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +24,7 @@ import com.musala.devops.dtos.ResponseDTO;
 import com.musala.devops.enums.State;
 import com.musala.devops.service.DroneService;
 
+@Validated
 @RestController
 @RequestMapping("/app/v1")
 @ResponseStatus(value = HttpStatus.OK)
