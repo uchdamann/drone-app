@@ -11,6 +11,7 @@ import com.musala.devops.dtos.DroneDTO;
 import com.musala.devops.dtos.MedicationDTO;
 import com.musala.devops.dtos.NewDroneDTO;
 import com.musala.devops.models.Drone;
+import com.musala.devops.models.DroneBatteryLog;
 import com.musala.devops.models.Medication;
 
 @Component
@@ -78,15 +79,16 @@ public class Converters {
 		return medicationDTOs.stream().map(this::conv_MedicationDTO_Medication).collect(Collectors.toList());
 	}
 	
-//	public State checkDroneState(Drone drone) {
-//		State state;
-//		
-//		if (drone.getMedications().isEmpty()){
-//			state = State.IDLE;			
-//		}
-//		else {
-//			if ()
-//		}
-//		return state;
-//	}
+	public DroneBatteryLog conv_Drone_DroneBatteryLog(Drone drone) {
+		DroneBatteryLog droneLog = new DroneBatteryLog();
+		droneLog.setDroneId(drone.getId());
+		droneLog.setDroneSerialNumber(drone.getSerialNumber());
+		droneLog.setDroneState(drone.getState());
+		droneLog.setBatteryLevel(drone.getBatteryCapacity());
+		return droneLog;
+	}
+	
+	public List<DroneBatteryLog> conv_Drones_DroneBatteryLogs(List<Drone> drones) {
+		return drones.stream().map(this::conv_Drone_DroneBatteryLog).collect(Collectors.toList());
+	}
 }
