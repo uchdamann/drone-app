@@ -17,4 +17,7 @@ public class ConfigProperties {
 	private String driver;
 	private String username;
 	private String password;
+	private int corePoolSize;
+	private int maxPoolSize;
+	private String threadPrefix;
 }

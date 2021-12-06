@@ -28,9 +28,10 @@ public class DispatchController {
 
 	
 	
-	//	TODO: Validate DTOs
-	//	scheduling
-	//	
+	//	TODO: JUnit tests are optional but advisable (if you have time)
+	//	validate max characters and notnull and safehtml, etc.
+	// Your project must have a README file with build/run/test instructions
+	
 	
 	
 	
@@ -50,7 +51,8 @@ public class DispatchController {
 	}
 	
 	@PutMapping("/load-drone/{droneId}")
-	public ResponseDTO<DroneDTO> loadDrone(@PathVariable Long droneId, @RequestBody @Valid List<MedicationDTO> medicationDTOs) {
+	public ResponseDTO<DroneDTO> loadDrone(@PathVariable Long droneId, 
+			@RequestBody @Valid List<MedicationDTO> medicationDTOs) {
 		return droneService.loadDrone(droneId, medicationDTOs);
 	}
 	
@@ -60,7 +62,7 @@ public class DispatchController {
 	}
 	
 	@GetMapping("/get-battery/{droneId}")
-	public ResponseDTO<Double> getDroneBattery(@PathVariable Long droneId) {
+	public ResponseDTO<String> getDroneBattery(@PathVariable Long droneId) {
 		return droneService.getBatteryLevel(droneId);
 	}
 }

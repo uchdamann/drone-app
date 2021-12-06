@@ -14,6 +14,9 @@ import com.musala.devops.models.Medication;
 import com.musala.devops.repository.DroneRepo;
 import com.musala.devops.repository.MedicationRepo;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Component
 public class Util {
 	
@@ -25,10 +28,12 @@ public class Util {
 	private Converters converters;
 	
 	@Transactional
-	public String normalMedWeight(Drone drone, List<MedicationDTO> medicationDTOs, Double totalLoad) {		
+	public String manageNormalMedWeight(Drone drone, List<MedicationDTO> medicationDTOs, Double totalLoad) {		
 		drone.setCurrentLoadWeight(drone.getCurrentLoadWeight() + totalLoad);
 		drone.setState(LOADING);
-		droneRepo.save(drone);
+		drone = droneRepo.save(drone);
+		log.info("-------------->>> Drone id:- {} is {} with current load of weight: {}", 
+				drone.getId(), drone.getState(), drone.getCurrentLoadWeight());
 		
 		for (MedicationDTO medDTO: medicationDTOs) {
 			Medication med = converters.conv_MedicationDTO_Medication(medDTO);
@@ -37,18 +42,22 @@ public class Util {
 			medicationRepo.save(med);
 		}
 		drone.setState(LOADED);
-		droneRepo.save(drone);
+		drone = droneRepo.save(drone);
+		log.info("-------------->>> Drone id:- {} is {} with current load of weight: {}", 
+				drone.getId(), drone.getState(), drone.getCurrentLoadWeight());
 		
 		return "All medications were loaded on drone";
 	}
 	
 	@Transactional
-	public String excessMedWeight(Drone drone, List<MedicationDTO> medicationDTOs, 
+	public String manageExcessMedWeight(Drone drone, List<MedicationDTO> medicationDTOs, 
 			Double totalLoad, Double availableSpace) {
 		int counter = 0;
 		Double currentLoadWeight = drone.getCurrentLoadWeight();
 		drone.setState(LOADING);
-		droneRepo.save(drone);
+		drone = droneRepo.save(drone);
+		log.info("-------------->>> Drone id:- {} is {} with current load of weight: {}", 
+				drone.getId(), drone.getState(), drone.getCurrentLoadWeight());
 		
 		medicationDTOs.sort((med1, med2) -> med2.getWeight().compareTo(med1.getWeight()));
 		
@@ -69,7 +78,9 @@ public class Util {
 		}
 		drone.setCurrentLoadWeight(currentLoadWeight);
 		drone.setState(LOADED);
-		droneRepo.save(drone);
+		drone = droneRepo.save(drone);
+		log.info("-------------->>> Drone id:- {} is {} with current load of weight: {}", 
+				drone.getId(), drone.getState(), drone.getCurrentLoadWeight());
 		
 		return "Only "+counter+" medications were added due to weight constraint";
 	}

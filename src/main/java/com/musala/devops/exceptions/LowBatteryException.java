@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class LowBatteryException extends RuntimeException implements Serializable {
 	private static final long serialVersionUID = 7238562067841068126L;
-	private static final String MESSAGE="Drone battery is too low for service";
+	private static final String MESSAGE="Drone battery is too low for dispatch";
 	
 	public LowBatteryException()
     {

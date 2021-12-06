@@ -33,6 +33,6 @@ public class DroneBatteryLogServiceImpl implements DroneBatteryLogService {
 		}
 		List<DroneBatteryLog> droneLogs = converters.conv_Drones_DroneBatteryLogs(drones);
 		logRepo.saveAll(droneLogs);
-		log.info("--------->>>>> Successfully Logged "+drones.size()+" Drone");
+		log.info("--------->>>>> Successfully Logged "+drones.size()+" Drone(s)");
 	}
 }

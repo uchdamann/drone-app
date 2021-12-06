@@ -14,5 +14,5 @@ public interface DroneService {
 	public ResponseDTO<DroneDTO> loadDrone(Long droneId, List<MedicationDTO> medicationDTOs);
 	
 	public ResponseDTO<List<MedicationDTO>> getMedications(Long droneId);
-	public ResponseDTO<Double> getBatteryLevel(Long droneId);
+	public ResponseDTO<String> getBatteryLevel(Long droneId);
 }

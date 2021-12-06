@@ -24,11 +24,11 @@ public class Drone extends CommonFields {
 	private String serialNumber;
 	@Enumerated(EnumType.STRING)
 	private Model model;
-	private Double weightLimit = 500.0;
+	private Double weightLimit;
 	private Double batteryCapacity;
 	@Enumerated(EnumType.STRING)
 	private State state = IDLE;
-	private Double currentLoadWeight = 0.0;
+	private Double currentLoadWeight;
 	@OneToMany(mappedBy = "drone", cascade = CascadeType.ALL)
 	private List<Medication> medications;
 }
