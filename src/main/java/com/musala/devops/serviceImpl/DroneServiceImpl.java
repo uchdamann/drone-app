@@ -74,8 +74,9 @@ public class DroneServiceImpl implements DroneService{
 			log.info("-------->>> Drone id:- {} battery is low and state is now {}", drone.getId(), drone.getState());
 			throw new LowBatteryException();
 		}
+		Double currentWeight = getCurrentLoadWeight(drone.getId());
 		
-		Double availableSpace = props.getMaxLoadWeight() - drone.getCurrentLoadWeight();
+		Double availableSpace = props.getMaxLoadWeight() - currentWeight;
 		
 		if (medicationDTOs.isEmpty()) {
 			log.info("-------------->>> No Medication on the drone id:- {}", droneId);
@@ -121,6 +122,6 @@ public class DroneServiceImpl implements DroneService{
 	public Double getCurrentLoadWeight (Long droneId) {
 		Drone drone = droneRepo.findById(droneId).orElseThrow(()-> new DroneDetailsException("No such drone found"));
 		return drone.getMedications().stream().mapToDouble(each-> each.getWeight())
-				.reduce(0, (total, eachWeight) -> total + eachWeight);		
+				.reduce(0, (total, eachWeight) -> total + eachWeight);
 	}
 }
