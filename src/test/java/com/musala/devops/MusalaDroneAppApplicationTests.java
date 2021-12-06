@@ -2,49 +2,35 @@ package com.musala.devops;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
-
-import javax.validation.ConstraintViolationException;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.event.annotation.BeforeTestClass;
 
 import com.musala.devops.config.ConfigProperties;
 import com.musala.devops.dtos.MedicationDTO;
 import com.musala.devops.dtos.NewDroneDTO;
 import com.musala.devops.enums.Model;
 import static com.musala.devops.enums.State.*;
-import com.musala.devops.helpers.Util;
 import com.musala.devops.models.Drone;
 import com.musala.devops.repository.DroneRepo;
-import com.musala.devops.repository.MedicationRepo;
 import com.musala.devops.service.DroneService;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @SpringBootTest
 class MusalaDroneAppApplicationTests {
 	@Autowired
 	private DroneService droneService;
-	@Autowired
-	private Util util;
 	@Autowired
 	private ConfigProperties props;
 	private Drone drone;
 	private List<MedicationDTO> medicationDTOs;
 	@Autowired
 	private DroneRepo droneRepo;
-	@Autowired
-	private MedicationRepo medRepo;
 
 	@BeforeEach
 	public void init() {
