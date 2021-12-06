@@ -13,6 +13,7 @@ import com.musala.devops.models.Drone;
 import com.musala.devops.models.Medication;
 import com.musala.devops.repository.DroneRepo;
 import com.musala.devops.repository.MedicationRepo;
+import com.musala.devops.service.DroneService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -26,10 +27,12 @@ public class Util {
 	private MedicationRepo medicationRepo;
 	@Autowired
 	private Converters converters;
+	@Autowired
+	private DroneService droneService;
 	
 	@Transactional
 	public String manageNormalMedWeight(Drone drone, List<MedicationDTO> medicationDTOs, Double totalLoad) {		
-		drone.setCurrentLoadWeight(drone.getCurrentLoadWeight() + totalLoad);
+		drone.setCurrentLoadWeight(droneService.getCurrentLoadWeight(drone.getId()) + totalLoad);
 		drone.setState(LOADING);
 		drone = droneRepo.save(drone);
 		log.info("-------------->>> Drone id:- {} is {} with current load of weight: {}", 

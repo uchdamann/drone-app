@@ -73,10 +73,8 @@ public class DroneServiceImpl implements DroneService{
 			drone = droneRepo.save(drone);
 			log.info("-------->>> Drone id:- {} battery is low and state is now {}", drone.getId(), drone.getState());
 			throw new LowBatteryException();
-		}
-		Double currentWeight = getCurrentLoadWeight(drone.getId());
-		
-		Double availableSpace = props.getMaxLoadWeight() - currentWeight;
+		}	
+		Double availableSpace = props.getMaxLoadWeight() - getCurrentLoadWeight(drone.getId());
 		
 		if (medicationDTOs.isEmpty()) {
 			log.info("-------------->>> No Medication on the drone id:- {}", droneId);

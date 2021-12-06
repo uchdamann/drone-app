@@ -12,7 +12,7 @@ public interface DroneService {
 	public ResponseDTO<List<DroneDTO>> registerDrone(List<NewDroneDTO> newDroneDTOs);
 	public ResponseDTO<List<DroneDTO>> getAvailableDrones(State droneState);
 	public ResponseDTO<DroneDTO> loadDrone(Long droneId, List<MedicationDTO> medicationDTOs);
-	
 	public ResponseDTO<List<MedicationDTO>> getMedications(Long droneId);
 	public ResponseDTO<String> getBatteryLevel(Long droneId);
+	public Double getCurrentLoadWeight(Long id);
 }
