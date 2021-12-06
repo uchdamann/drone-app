@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @SuppressWarnings("deprecation")
 public class NewDroneDTO {
 	@NotBlank
-	@Length(max = 100, min = 12)
+	@Length(max = 100, min = 8)
 	@SafeHtml(whitelistType = WhiteListType.NONE)
 	private String serialNumber;
 	@NotNull

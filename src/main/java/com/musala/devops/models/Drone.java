@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 
 import com.musala.devops.enums.Model;
@@ -29,6 +30,6 @@ public class Drone extends CommonFields {
 	@Enumerated(EnumType.STRING)
 	private State state = IDLE;
 	private Double currentLoadWeight;
-	@OneToMany(mappedBy = "drone", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "drone", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<Medication> medications;
 }

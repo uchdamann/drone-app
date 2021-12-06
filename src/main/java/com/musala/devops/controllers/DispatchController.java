@@ -30,20 +30,8 @@ import com.musala.devops.service.DroneService;
 @ResponseStatus(value = HttpStatus.OK)
 @CrossOrigin(maxAge = 3600, origins = "*")
 public class DispatchController {
-
-	
-	
-	//	TODO: JUnit tests are optional but advisable (if you have time)
-	//	validate max characters and notnull and safehtml, etc.
-	// Your project must have a README file with build/run/test instructions
-	
-	
-	
-	
-	
-	
 	@Autowired
-	public DroneService droneService;
+	private DroneService droneService;
 	
 	@PostMapping("/save-drone")
 	public ResponseDTO<List<DroneDTO>> saveDrone(@Valid @RequestBody List<NewDroneDTO> newDroneDTOs) {

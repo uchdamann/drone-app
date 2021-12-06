@@ -31,7 +31,6 @@ import static com.musala.devops.enums.ResponseMessages.*;
 @Slf4j
 @Service
 public class DroneServiceImpl implements DroneService{
-	
 	@Autowired
 	private DroneRepo droneRepo;
 	@Autowired

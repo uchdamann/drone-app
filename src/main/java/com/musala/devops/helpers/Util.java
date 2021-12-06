@@ -1,5 +1,6 @@
 package com.musala.devops.helpers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -38,12 +39,14 @@ public class Util {
 		log.info("-------------->>> Drone id:- {} is {} with current load of weight: {}", 
 				drone.getId(), drone.getState(), drone.getCurrentLoadWeight());
 		
+		List<Medication> meds = new ArrayList<>();
 		for (MedicationDTO medDTO: medicationDTOs) {
 			Medication med = converters.conv_MedicationDTO_Medication(medDTO);
 			med.setHasBeenLoaded(true);
 			med.setDrone(drone);
-			medicationRepo.save(med);
+			meds.add(medicationRepo.save(med));
 		}
+		drone.setMedications(meds);
 		drone.setState(LOADED);
 		drone = droneRepo.save(drone);
 		log.info("-------------->>> Drone id:- {} is {} with current load of weight: {}", 
